@@ -6,7 +6,7 @@ namespace ConnectionKnots
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Generator.ExpGenerate(1.0));
         }
     }
 }
