@@ -6,9 +6,21 @@ namespace ConnectionKnots
 {
     public static class Generator
     {
-        public static double PuassonGenerate()
+        public static double PuassonGenerate(double lambda)
         {
-            return double.Epsilon;
+            Random rand = new Random();
+            int k = 0;
+            double p = Math.Exp(--lambda);
+            double G = p;
+            double z = rand.NextDouble();
+            while(z <= G)
+            {
+                p = p * lambda / (k + 1);
+                G = G + p;
+                k++;
+            }
+
+            return z;
         }
     }
 }
