@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConnectionKnots
 {
-    class Generator1
+    public static class Generator1
     {
-        public static int PuassonGenerate(double lambda)
+        public static double PuassonGenerate(double lambda)
         {
             Random rand = new Random();
             int k = 0;
