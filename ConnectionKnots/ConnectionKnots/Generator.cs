@@ -32,9 +32,9 @@ namespace ConnectionKnots
             {
                 y12 += random.NextDouble();
             }
+            y12 -= 6;
+
+            return m + sigma * y12;
         }
-
-
-
     }
 }
