@@ -6,7 +6,7 @@ namespace ConnectionKnots
 {
     public static class Generator
     {
-        public static int EvenlyGenerate(int min, int max)
+        public static double EvenlyGenerate(int min, int max)
         {
             Random random = new Random();
 
@@ -35,6 +35,11 @@ namespace ConnectionKnots
             y12 -= 6;
 
             return m + sigma * y12;
+        }
+
+        public static double LogNormalGenerate(double m, double sigma)
+        {
+            return Math.Exp(GaussGenerate(m, sigma));
         }
     }
 }

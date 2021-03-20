@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConnectionKnots
 {
@@ -6,7 +7,15 @@ namespace ConnectionKnots
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Generator.ExpGenerate(1.0));
+            List<double> arr = new List<double>();
+
+            for(int i = 0; i < 10;i++)
+            {
+                arr.Add(Generator.EvenlyGenerate(0, 5));
+            }
+            Histogramma.Build(arr);
+
+            Console.WriteLine
         }
     }
 }
