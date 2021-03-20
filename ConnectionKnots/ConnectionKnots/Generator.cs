@@ -26,7 +26,15 @@ namespace ConnectionKnots
 
         public static double GaussGenerate(double m, double sigma)
         {
-
+            Random random = new Random();
+            double y12 = 0;
+            for (int i = 0; i < 12; i++) 
+            {
+                y12 += random.NextDouble();
+            }
         }
+
+
+
     }
 }
