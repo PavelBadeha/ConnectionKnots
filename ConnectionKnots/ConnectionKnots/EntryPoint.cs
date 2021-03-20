@@ -9,13 +9,11 @@ namespace ConnectionKnots
         {
             List<double> arr = new List<double>();
 
-            for(int i = 0; i < 10;i++)
+            for(int i = 0; i < 10001;i++)
             {
-                arr.Add(Generator.EvenlyGenerate(0, 5));
+                arr.Add(Generator.EvenlyGenerate(0, 20));
             }
             Histogramma.Build(arr);
-
-            Console.WriteLine
         }
     }
 }

@@ -10,7 +10,7 @@ namespace ConnectionKnots
         {
             Random random = new Random();
 
-            return random.Next(min, max);
+            return random.Next(min, max + 1);
         }
 
         public static double ExpGenerate(double lambda)
