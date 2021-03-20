@@ -26,8 +26,13 @@ namespace ConnectionKnots
 
         public static double ErlangGenerate(double lambda)
         {
-            for(int )
-            Generator.ExpGenerate(lambda);
+            double t = 0;
+            for (int i = 1; i <= 3; i++)
+            {
+                t += Generator.ExpGenerate(lambda);
+            }
+
+            return t;
         }
     }
 }
