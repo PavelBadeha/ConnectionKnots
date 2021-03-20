@@ -33,6 +33,7 @@ namespace ConnectionKnots
                 probability[(int)(z / (1.0d / K))]++;
             }
 
+            Histogramma.Build1(probability);
             double expectation = GetExpectation(data);
             Console.WriteLine($"Равномерное n = 100, M = {expectation}");
 
